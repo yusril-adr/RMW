@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title></title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/style/style.css">
+
+    <!-- Main JS  -->
+    <script src="assets/script/manga.js"></script>
+    <script src="assets/script/index.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/Bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+      <header>
+        <div class="jumbotron jumbotron-fluid">
+            <h2><span id="title"></span></h2>
+        </div>
+      </header>
+    
+      <main class="bg-dark">
+          <div class="container-fluid">
+            <div class="manga">
+                <img id="manga-img">
+                <div class="prev" id="prev"></div>
+                <div class="next" id="next"></div>
+            </div>
+          </div>
+      </main>
+
+      <footer>
+          <div class="container-fluid bg-dark page-control">
+                <button type="button" class="btn btn-lg btn-danger" id="prev-btn">Prev</button>
+                <select id="page-indicator"></select>
+                <button type="button" class="btn btn-lg btn-danger" id="next-btn">Next</button>
+          </div>
+      </footer>
+  </body>
+</html>
