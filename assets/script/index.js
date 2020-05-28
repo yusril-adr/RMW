@@ -1,10 +1,10 @@
 const main = () => {
     const headTitleElement = document.querySelector("Title");
     const titleElement = document.querySelector("#title");
-    const pageIndicatorElement = document.querySelector("#page-indicator");
     const mangaImgElement = document.querySelector("#manga-img");
     const prevElement = document.querySelector("#prev");
     const nextElement = document.querySelector("#next");
+    const pageIndicatorElement = document.querySelector("#page-indicator");
     const prevBtnElement = document.querySelector("#prev-btn");
     const nextBtnElement = document.querySelector("#next-btn");
 
@@ -43,7 +43,7 @@ const main = () => {
     const currentPage = (page) => {
 
         mangaImgElement.setAttribute("src", `assets/source/${page}.${manga.type}`)
-        mangaImgElement.setAttribute("alt", `${page}.jpg`)
+        mangaImgElement.setAttribute("alt", `${page}.${manga.type}`)
 
         pageIndicatorElement.innerHTML = "";
         for(let i = 1; i <= manga.totalPage;i++) {
@@ -52,7 +52,7 @@ const main = () => {
             if(i === manga.currentPage) {
                 optionElement.setAttribute("selected", "");
             }
-            optionElement.innerHTML = i;
+            optionElement.innerText = i;
             pageIndicatorElement.appendChild(optionElement);
         }
 
