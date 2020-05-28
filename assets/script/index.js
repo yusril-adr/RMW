@@ -19,7 +19,7 @@ const main = () => {
             manga.currentPage -= 1;
             currentPage(manga.currentPage);
         }
-    }
+    };
 
     const next = () => {
         if(manga.currentPage < manga.totalPage) {
@@ -29,7 +29,7 @@ const main = () => {
             manga.currentPage += 1;
             currentPage(manga.currentPage);
         }
-    }
+    };
 
     const jump = () => {
         document.body.scrollTop = 0;
@@ -38,10 +38,9 @@ const main = () => {
         const selectedElement = document.querySelector("#page-indicator");
         manga.currentPage = Number(selectedElement.value);
         currentPage(manga.currentPage);
-    }
+    };
     
     const currentPage = (page) => {
-
         mangaImgElement.setAttribute("src", `assets/source/${page}.${manga.type}`)
         mangaImgElement.setAttribute("alt", `${page}.${manga.type}`)
 
@@ -62,9 +61,9 @@ const main = () => {
         nextBtnElement.addEventListener("click", next);
 
         pageIndicatorElement.addEventListener("change", jump);
-    }
+    };
 
     currentPage(manga.currentPage);
-}
+};
 
 document.addEventListener("DOMContentLoaded", main);
