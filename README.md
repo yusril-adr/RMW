@@ -4,7 +4,7 @@ Read Manga on Web (RMW) adalah sebuah program yang berfungsi agar user dapat mer
 ## Cara menggunakan
 
 - Masukkan semua halaman manga pada folder "assets/source".
-- Cek ekstensi filenya dengan klik kanan, pilih properties (Biasanya ".jpg" atau ".png") dan rubah nama file menjadi <nomor halaman>.<ekstensi file> contoh : Manga halaman 1 dengan exstensi ".jpg" maka nama file tersebut menjadi "1.jpg".
+- Cek ekstensi filenya dengan klik kanan, pilih properties (Biasanya ".jpg" atau ".png") dan rubah nama file menjadi "nomor halaman"."ekstensi file" contoh : Manga halaman 1 dengan exstensi ".jpg" maka nama file tersebut menjadi "1.jpg".
 - Pada folder "assets/script/" terdapat "manga.js" lalu kita buka file tersebut dengan text editor seperti notepad ataupun text editor lainnya.
 - Pada file tersebut, kita masukkan beberapa informasi tentang manga tersebut.
 - Untuk judul manga kita masukkan pada :
