@@ -28,5 +28,5 @@ Read Manga on Web (RMW) adalah sebuah program yang berfungsi agar user dapat mer
     ``` 
 - Langkah terakhir anda bisa membuka file index.html pada folder utama dengan browser anda untuk menikmati membaca manga offline.
 
-## Copyright
-© 2020 by Yusril Adriansyah Putra.
+## LICENSE
+[MIT](LICENSE.md)
